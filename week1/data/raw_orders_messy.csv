@@ -1,0 +1,21 @@
+order_id,customer_id,customer_name,customer_email,order_date,item_count,unit_price,status
+1001,C101, Alice Smith ,alice@example.com,2026-09-01,2,24.99,COMPLETED
+1002,C102,Bob Jones,bob.jones@gmail.com,2026-09-01,1,$15.50,completed
+1003,C103, Charlie Brown ,charlie@company.org,2026/09/02,3,9.99,pending
+1004,,Diana Prince,diana@themyscira.gov,2026-09-02,1,99.00,Completed
+1005,C105,Evan Wright,evan.w@invalid-domain,2026-09-03,0,0.00,cancelled
+1006,C106,Fiona Gallagher,,2026-09-03,5,-12.50,Refunded
+1003,C103, Charlie Brown ,charlie@company.org,2026-09-04,3,9.99,COMPLETED
+1007,C107,George Clark,george@clark.io,04-09-2026,2,45.00,PENDING
+1008,C108,Hannah Abbott,hannah@hogwarts.edu,2026-09-05,two,18.00,completed
+1009,C109,Ian Malcolm,ian@jurassic.org,2026-09-05,4,25.00,COMPLETED
+,C110,Unknown Ghost,ghost@void.net,2026-09-06,1,50.00,pending
+1010,C111,Julia Roberts,julia@cinema.com,2026-09-06,3,NULL,FAILED
+1011,C112,  Kevin Bacon  ,kevin@sixdegrees.com,2026-09-07,1,75.25,shipped
+1012,C113,Laura Croft,laura@tomb.org,invalid-date,2,120.00,completed
+1013,C114,Michael Scott,m.scott@dundermifflin.com,2026-09-08,10,5.50,Completed
+1014,C115,Nancy Wheeler,nancy@hawkins.net,2026-09-08,1,N/A,pending
+1015,C116,Oscar Martinez,oscar@accounting.org,2026-09-09,3,33.33,COMPLETED
+1009,C109,Ian Malcolm,ian@jurassic.org,2026-09-05,4,25.00,COMPLETED
+1016,C117,Peter Parker,spidey@dailybugle.com,2026-09-09,-1,15.00,shipped
+1017,C118,Quinn Fabray,quinn@glee.edu,2026-09-10,2,22.50,delivered

@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments (critical - never commit virtual environments!)
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & secrets (keys, passwords, tokens)
+.env
+.env.*
+!.env.example
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Log files
+*.log
+
+# Optional: Pipeline Outputs / Generated Data
+# (Uncomment the line below if you don't want generated data committed to Git)
+# **/output/
+output/
+*.md

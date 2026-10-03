@@ -1,15 +1,26 @@
-from datetime import date,datetime,timedelta
+from pydantic import BaseModel,field_validator
 
 
-def calculatedate():
-    end=date.today()
-    start=end - timedelta(days=30)
-    end_str=end.strftime("%Y-%m-%d")
-    start_str=start.strftime("%Y-%m-%d")
-    return start_str,end_str
+class UserProfile(BaseModel):
+    username:str
+    level:int
+    is_online:bool=False
+
+    @field_validator("username")
+    @classmethod
+    def username_must_not_space(cls,value:str)->str:
+        if " " in value:
+            raise ValueError("Username cannot contain spaces!")
+        return value
+    @field_validator("level")
+    @classmethod
+    def level_checker(cls,value:int)->int:
+        if not (1<=value<=100):
+            raise ValueError("Level must be between 1 and 100")
+        return value
 
 
-
-start_date,end_date=calculatedate()
-print(f"start-date:{start_date}")
-print(f"End-date:{end_date}")
+player = UserProfile(username="ShadowNinja", level="25")
+data=player.model_dump()
+print(data)
+print(type(data))
